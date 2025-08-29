@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ Project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",                // Use C++17
+                "-g",                        // Debug info
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/**/*.cpp",
+                "-o",
+                "${workspaceFolder}/build/chess.exe"  // Output executable
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile and link all cpp files into one executable."
+        }
+    ]
+}
