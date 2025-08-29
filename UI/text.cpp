@@ -1,5 +1,5 @@
 #include <iostream>
-#include "UI/text.h"
+#include "text.h"
 
 using namespace std;
 
