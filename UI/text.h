@@ -1,6 +1,8 @@
 #ifndef TEXT_H
 #define TEXT_H
 
+#include "color.h"
+#include "style.h"
 #include <string>
 
 using namespace std;
@@ -12,10 +14,12 @@ namespace UI
     public:
         // * Attributes
         string text;
-        
+        Color* color;
+        Style* style;
+
         // * Constructor
         Text();
-        Text(string text);
+        Text(string text, Color *color, Style *style);
 
         // * Method - Display the text
         void display();     // ? Single line
