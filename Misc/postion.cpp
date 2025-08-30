@@ -59,3 +59,11 @@ Position Position::abs_diff(const Position &position2) const
 {
     return Position(abs(row - position2.row), abs(column - position2.column));
 }
+
+// * Function - Labeled -> Position
+Position labeled_to_position(const string &labeled_position)
+{
+    int column = tolower(labeled_position[0]) - 'a';
+    int row = labeled_position[1] - '1';
+    return Position(row, column);
+}

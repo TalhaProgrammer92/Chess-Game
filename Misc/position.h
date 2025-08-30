@@ -32,6 +32,9 @@ namespace Misc
         // * Method - Get Absolute Difference
         Position abs_diff(const Position &position2) const;
     };
+
+    // * Function - Convert labeled position to actual position
+    Position labeled_to_position(const string &labeled_position);
 }
 
 #endif
