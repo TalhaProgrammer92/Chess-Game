@@ -2,11 +2,13 @@
 #define STYLE_H
 
 #include <string>
+using namespace std;
 
 namespace UI
 {
     // * Text style ANSI codes
     enum class TextStyle {
+        None          = -1,
         Bold          = 1,
         Dim           = 2,
         Italic        = 3,
@@ -19,7 +21,7 @@ namespace UI
 
     // * Function to get ANSI code for a style
     inline std::string get_ansi(TextStyle style) {
-        return "\033[" + std::to_string(static_cast<int>(style)) + "m";
+        return (style != TextStyle::None) ? "\033[" + to_string(static_cast<int>(style)) + "m" : "";
     }
 
     class Style
@@ -29,6 +31,7 @@ namespace UI
         TextStyle style;
 
         // * Constructor
+        Style();
         Style(TextStyle style);
 
         // * Method - Get ANSI code string

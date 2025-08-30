@@ -4,6 +4,7 @@
 using namespace std;
 
 // * Constructor
+UI::Color::Color() : fg(ForegroundColor::None), bg(BackgroundColor::None) {}
 UI::Color::Color(ForegroundColor fg, BackgroundColor bg) : fg(fg), bg(bg) {}
 
 // * Method - Get ANSI code string

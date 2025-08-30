@@ -20,10 +20,14 @@ namespace UI
         // * Constructor
         Text();
         Text(string text, Color *color, Style *style);
+        // Text(UI::Text other);
 
         // * Method - Display the text
         void display();     // ? Single line
         void display_ln();  // ? With line break
+
+        // * Destructor
+        ~Text();
     };
 }
 

@@ -8,6 +8,7 @@ namespace UI
 {
     // * Foreground color ANSI codes
     enum class ForegroundColor {
+        None         = -1,
         Black        = 30,
         Red          = 31,
         Green        = 32,
@@ -28,6 +29,7 @@ namespace UI
 
     // * Background color ANSI codes
     enum class BackgroundColor {
+        None         = -1,
         Black        = 40,
         Red          = 41,
         Green        = 42,
@@ -48,7 +50,15 @@ namespace UI
 
     // * Function to convert color enum to ANSI code string
     inline string to_ansi_code(ForegroundColor fg, BackgroundColor bg) {
-        return "\033[" + to_string(static_cast<int>(fg)) + ";" + to_string(static_cast<int>(bg)) + "m";
+        string prefix = "\033[", suffix = "m";
+        string fg_code = (fg != ForegroundColor::None) ? prefix + to_string(static_cast<int>(fg)) : "";
+        string bg_code = (bg != BackgroundColor::None) ? to_string(static_cast<int>(bg)) + suffix : "";
+        
+        if (fg_code.empty() && bg_code.empty()) return "";
+        else if (fg_code.empty()) return prefix + bg_code;
+        else if (bg_code.empty()) return fg_code + suffix;
+        return fg_code + ";" + bg_code;
+        // return "\033[" + to_string(static_cast<int>(fg)) + ";" + to_string(static_cast<int>(bg)) + "m";
     }
 
     class Color
@@ -59,7 +69,8 @@ namespace UI
         BackgroundColor bg;
 
         // * Constructor
-        Color(ForegroundColor fg = ForegroundColor::White, BackgroundColor bg = BackgroundColor::Black);
+        Color();
+        Color(ForegroundColor fg, BackgroundColor bg);
 
         // * Method - Get ANSI code string
         string to_ansi() const;

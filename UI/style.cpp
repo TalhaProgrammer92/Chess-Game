@@ -4,6 +4,7 @@
 using namespace std;
 
 // * Constructor
+UI::Style::Style() : style(TextStyle::None) {}
 UI::Style::Style(TextStyle style) : style(style) {}
 
 // * Method - Get ANSI code string
