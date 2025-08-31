@@ -1,7 +1,7 @@
 ### Linking & Compilation
 
 ```cmd
-g++ Player/*.cpp UI/*.cpp Misc/*.cpp main.cpp -o chess
+g++ Misc/*.cpp Player/*.cpp UI/*.cpp main.cpp -o chess
 ```
 
 ---
