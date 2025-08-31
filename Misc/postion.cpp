@@ -1,8 +1,10 @@
 #include <iostream>
 #include "position.h"
+#include "../UI/messages.h"
 
 using namespace std;
 using namespace Misc;
+using namespace UI;
 
 // * Constructor
 Position::Position() : row(0), column(0) {}
@@ -60,8 +62,14 @@ Position Position::abs_diff(const Position &position2) const
     return Position(abs(row - position2.row), abs(column - position2.column));
 }
 
+// * Method - Display Position
+void Position::display()
+{
+    Messages::info("Position - Row: " + to_string(row) + ", Column: " + to_string(column));
+}
+
 // * Function - Labeled -> Position
-Position labeled_to_position(const string &labeled_position)
+Position labeled_to_position(const std::string &labeled_position)
 {
     int column = tolower(labeled_position[0]) - 'a';
     int row = labeled_position[1] - '1';

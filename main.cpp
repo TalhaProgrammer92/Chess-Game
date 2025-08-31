@@ -10,6 +10,8 @@
 #include "Player/name.h"
 #include "Player/player.h"
 
+#include "Misc/position.h"
+
 using namespace std;
 
 int main()
@@ -37,4 +39,7 @@ int main()
         Player::Score(5)
     );
     player.display_info();
+
+    Misc::Position pos1(1, 2);
+    pos1.display();
 }

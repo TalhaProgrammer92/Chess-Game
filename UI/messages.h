@@ -7,9 +7,9 @@
 namespace UI
 {
     // * Predefined text
-    const Text INFO_TEXT("[INFO]", new Color(ForegroundColor::Blue, BackgroundColor::None), new Style(TextStyle::Bold));
-    const Text WARNING_TEXT("[WARNING]", new Color(ForegroundColor::Yellow, BackgroundColor::None), new Style(TextStyle::Bold));
-    const Text ERROR_TEXT("[ERROR]", new Color(ForegroundColor::Red, BackgroundColor::None), new Style(TextStyle::Bold));
+    const Text INFO_TEXT("[INFO]", new Color(ForegroundColor::BrightBlue, BackgroundColor::None), new Style(TextStyle::Bold));
+    const Text WARNING_TEXT("[WARNING]", new Color(ForegroundColor::BrightYellow, BackgroundColor::None), new Style(TextStyle::Bold));
+    const Text ERROR_TEXT("[ERROR]", new Color(ForegroundColor::BrightRed, BackgroundColor::None), new Style(TextStyle::Bold));
 
     class Messages
     {
