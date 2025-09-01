@@ -20,7 +20,7 @@ PieceBase::PieceBase(Position position, int group)
 void PieceBase::display_info()
 {
     string group = (this->group == 0) ? "White" : "Black";
-    string info = "Piece Type: " + group + ", Position: (" + to_string(this->position.get_row()) + ", " + to_string(this->position.get_column()) + ")";
+    string info = "Piece Group: " + group + ", Position: (" + to_string(this->position.get_row()) + ", " + to_string(this->position.get_column()) + ")";
     Messages::info(info);
 }
 

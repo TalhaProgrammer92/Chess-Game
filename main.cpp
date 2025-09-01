@@ -12,6 +12,8 @@
 
 #include "Misc/position.h"
 
+#include "Piece/pawn.h"
+
 using namespace std;
 
 int main()
@@ -34,12 +36,15 @@ int main()
 //     cout << "Player1:\t" << name1.get() << "\nPlayer2:\t" << name2.get() << endl;
     // cout << "Equal:\t\t" << (name1 == name2) << endl;
 
-    Player::GamePlayer player(
-        Player::Name("Talha Ahmad"),
-        Player::Score(5)
-    );
-    player.display_info();
+    // Player::GamePlayer player(
+    //     Player::Name("Talha Ahmad"),
+    //     Player::Score(5)
+    // );
+    // player.display_info();
 
-    Misc::Position pos1(1, 2);
-    pos1.display();
+    // Misc::Position pos1(1, 2);
+    // pos1.display();
+
+    Piece::Pawn pawn(Misc::Position(2, 0), 1);
+    pawn.display_info();
 }
