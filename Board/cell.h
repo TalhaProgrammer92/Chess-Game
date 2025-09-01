@@ -12,6 +12,18 @@ namespace Board
         bool is_active; // ? is_active - Whether the piece is currently active on the board
     };
 
+    // * PieceInfo related functions
+    bool ContainsPawn(PieceInfo* piece_info);
+    bool ContainsKnight(PieceInfo* piece_info);
+    bool ContainsBishop(PieceInfo* piece_info);
+    bool ContainsRook(PieceInfo* piece_info);
+    bool ContainsQueen(PieceInfo* piece_info);
+    bool ContainsKing(PieceInfo* piece_info);
+
+    bool IsBlack(PieceInfo* piece_info);
+    bool IsWhite(PieceInfo* piece_info);
+
+    // ? Class - Represents a cell on the board
     class Cell
     {
         // * Attributes

@@ -8,6 +8,47 @@ using namespace Board;
 using namespace Misc;
 using namespace UI;
 
+// * PieceInfo related functions
+bool ContainsPawn(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 1;
+}
+
+bool ContainsKnight(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 2;
+}
+
+bool ContainsBishop(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 3;
+}
+
+bool ContainsRook(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 4;
+}
+
+bool ContainsQueen(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 5;
+}
+
+bool ContainsKing(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->type == 6;
+}
+
+bool IsBlack(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->index % 2 == 1;
+}
+
+bool IsWhite(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->index % 2 == 0;
+}
+
 // * Constructor & Destructor
 Cell::Cell()
 {
