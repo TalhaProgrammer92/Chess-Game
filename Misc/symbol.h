@@ -39,6 +39,33 @@ namespace Misc
             const std::string BLACK = "\u25FC"; // ◼
         }
 
+        namespace Label
+        {
+            namespace Numbers
+            {
+                const std::string ONE = "\u2460"; // ①
+                const std::string TWO = "\u2461"; // ②
+                const std::string THREE = "\u2462"; // ③
+                const std::string FOUR = "\u2463"; // ④
+                const std::string FIVE = "\u2464"; // ⑤
+                const std::string SIX = "\u2465"; // ⑥
+                const std::string SEVEN = "\u2466"; // ⑦
+                const std::string EIGHT = "\u2467"; // ⑧
+            }
+
+            namespace Letters
+            {
+                const std::string A = "\u24B6"; // Ⓐ
+                const std::string B = "\u24B7"; // Ⓑ
+                const std::string C = "\u24B8"; // Ⓒ
+                const std::string D = "\u24B9"; // Ⓓ
+                const std::string E = "\u24BA"; // Ⓔ
+                const std::string F = "\u24BB"; // Ⓕ
+                const std::string G = "\u24BC"; // Ⓖ
+                const std::string H = "\u24BD"; // Ⓗ
+            }
+        }
+
         namespace Special
         {
             const std::string CHECK_MARK = "\u2713"; // ✓
