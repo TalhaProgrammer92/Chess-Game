@@ -39,6 +39,11 @@ bool ContainsKing(PieceInfo* piece_info)
     return piece_info != nullptr && piece_info->type == 6;
 }
 
+bool ContainsPiece(PieceInfo* piece_info)
+{
+    return piece_info != nullptr && piece_info->is_active;
+}
+
 bool IsBlack(PieceInfo* piece_info)
 {
     return piece_info != nullptr && piece_info->index % 2 == 1;

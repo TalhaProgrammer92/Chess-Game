@@ -19,7 +19,7 @@ namespace Board
     bool ContainsRook(PieceInfo* piece_info);
     bool ContainsQueen(PieceInfo* piece_info);
     bool ContainsKing(PieceInfo* piece_info);
-
+    bool ContainsPiece(PieceInfo* piece_info);
     bool IsBlack(PieceInfo* piece_info);
     bool IsWhite(PieceInfo* piece_info);
 
