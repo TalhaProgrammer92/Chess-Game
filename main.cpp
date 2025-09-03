@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 
 // #include "UI/text.h"
 // #include "UI/color.h"
@@ -45,6 +46,11 @@ int main()
 
     // Misc::Position pos1(1, 2);
     // pos1.display();
+
+    // Set the console output code page to UTF-8
+    SetConsoleOutputCP(CP_UTF8);
+    // Set the console input code page to UTF-8
+    SetConsoleCP(CP_UTF8);
 
     Piece::Pawn pawn(Misc::Position(2, 0), 1);
     pawn.display_info();
