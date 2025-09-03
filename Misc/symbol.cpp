@@ -29,7 +29,8 @@ void Misc::Symbol::display()
 // * Destructor
 Misc::Symbol::~Symbol()
 {
-    UI::Text::~Text();
+    delete color;
+    delete style;
 }
 
 // * Get empty cell based on position

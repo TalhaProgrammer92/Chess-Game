@@ -11,6 +11,7 @@
 #include "Player/player.h"
 
 #include "Misc/position.h"
+#include "Misc/symbol.h"
 
 #include "Piece/pawn.h"
 
@@ -47,4 +48,8 @@ int main()
 
     Piece::Pawn pawn(Misc::Position(2, 0), 1);
     pawn.display_info();
+
+    Misc::Position pos(1, 2);
+    Misc::Symbol cell = Misc::get_empty_cell(pos);
+    cell.display();
 }
