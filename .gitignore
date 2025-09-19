@@ -16,6 +16,7 @@
 
 # Debugger Files
 *.pdb
+*.idb
 
 # Compiled Dynamic libraries
 *.so
@@ -37,10 +38,72 @@
 *.out
 *.app
 
-# debug information files
+# Debug information files
 *.dwo
 
-# Others
+# Other archives
 *.zip
 *.rar
 *.sfx
+
+##############################
+# Visual Studio specific
+##############################
+
+# Build folders
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+ipch/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.VC.opendb
+
+# Auto-generated files
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.VC.VC.opendb
+*.VC.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# CMake (if you’re using CMake inside VS)
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+*.cmake
+
+# Others
+*.ipdb
+*.iobj
+
+# Crash dumps
+*.dmp
+
+# Visual Studio Code (if you also use VS Code)
+.vscode/
