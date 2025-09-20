@@ -9,7 +9,9 @@
 #include "../Chess/style.h"
 
 #include "../Chess/position.h"
-#include "../Chess/unicode.h"
+#include "../Chess/symbols.h"
+
+#include "../Chess/misc.h"
 
 using namespace std;
 
@@ -50,7 +52,22 @@ int main()
 		}
 	}*/
 
-	cout << Misc::Piece::White::KING << endl;
+	/*cout << Misc::Piece::White::KING << endl;
 	cout << Misc::Piece::Black::KING << endl;
-	cout << Misc::get_empty_cell(Misc::Position(1, 2)) << endl;
+	cout << Misc::get_empty_cell(Misc::Position(1, 2)) << endl;*/
+
+	/*Menu::Decorator decor(
+		"#", new UI::Color(
+			UI::ForegroundColor::BrightRed, UI::BackgroundColor::White
+		), new UI::Style(UI::TextStyle::Bold)
+	);
+	decor.display();*/
+
+	Menu::OptionsList options(
+		new UI::Color(UI::ForegroundColor::BrightYellow, UI::BackgroundColor::None),
+		new UI::Style(UI::TextStyle::Bold)
+	);
+	for (int i = 0; i < 5; i++)
+		options.add_option("Option " + to_string(i + 1));
+	options.display_all();
 }

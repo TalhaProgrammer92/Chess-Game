@@ -127,7 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="message.h" />
+    <ClInclude Include="misc.h" />
     <ClInclude Include="name.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="position.h" />
@@ -135,7 +137,7 @@
     <ClInclude Include="style.h" />
     <ClInclude Include="symbol.h" />
     <ClInclude Include="text.h" />
-    <ClInclude Include="unicode.h" />
+    <ClInclude Include="symbols.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
