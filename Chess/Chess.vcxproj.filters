@@ -25,6 +25,9 @@
     <Filter Include="Header Files\Menu">
       <UniqueIdentifier>{fae8f4f9-8601-4c7b-bf25-f511e8ea4490}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Board">
+      <UniqueIdentifier>{2954f553-f9a1-4454-80cf-ad55042733f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chess.cpp">
@@ -70,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="functions.h">
       <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="cell.h">
+      <Filter>Header Files\Board</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

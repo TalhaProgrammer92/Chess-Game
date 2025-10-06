@@ -126,6 +126,7 @@
     <ClCompile Include="Chess.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cell.h" />
     <ClInclude Include="color.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="menu.h" />
