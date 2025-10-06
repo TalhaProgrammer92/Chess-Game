@@ -1,56 +1,79 @@
+##############################################
 # Prerequisites
+##############################################
 *.d
 
+##############################################
 # Compiled Object files
+##############################################
 *.slo
 *.lo
 *.o
 *.obj
 
+##############################################
 # Precompiled Headers
+##############################################
 *.gch
 *.pch
 
+##############################################
 # Linker files
+##############################################
 *.ilk
+*.exp
+*.lib
+*.map
 
-# Debugger Files
+##############################################
+# Debugger and Program Database Files
+##############################################
 *.pdb
 *.idb
 
-# Compiled Dynamic libraries
+##############################################
+# Compiled Dynamic/Static Libraries
+##############################################
+*.dll
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
+*.la
+*.lai
 
+##############################################
 # Executables
+##############################################
 *.exe
 *.out
 *.app
 
-# Debug information files
+##############################################
+# Debug Information and Intermediate Files
+##############################################
 *.dwo
+*.ipdb
+*.iobj
+*.res
+*.rsp
+*.manifest
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
 
-# Other archives
+##############################################
+# Archives and Packages
+##############################################
 *.zip
 *.rar
+*.7z
+*.tar
+*.gz
 *.sfx
 
-##############################
-# Visual Studio specific
-##############################
-
-# Build folders
+##############################################
+# Visual Studio Specific
+##############################################
 [Bb]in/
 [Oo]bj/
 [Dd]ebug*/
@@ -60,33 +83,52 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 ipch/
-
-# User-specific files
-*.user
-*.userosscache
-*.suo
-*.sdf
 *.opensdf
+*.sdf
 *.cachefile
 *.VC.db
 *.VC.opendb
-
-# Auto-generated files
+*.user
+*.userosscache
+*.suo
 *.log
+*.opendb
 *.tlog
 *.lastbuildstate
-*.unsuccessfulbuild
-*.VC.VC.opendb
-*.VC.db
 
-# NuGet
-*.nupkg
-*.snupkg
-packages/
-*.nuget.props
-*.nuget.targets
+# Visual Studio Intermediate Build Folders
+*.idb
+*.ipch
+*.obj
+*.pch
+*.pdb
+*.exp
+*.ilk
+*.iobj
+*.ipdb
+*.bsc
 
-# CMake (if you’re using CMake inside VS)
+##############################################
+# Profiling / Testing / Coverage
+##############################################
+*.pgc
+*.pgd
+*.gcno
+*.gcda
+*.gcov
+
+##############################################
+# Intel Compiler / Other Toolchains
+##############################################
+*.pchi
+*.pchx
+*.pchi
+*.tli
+*.tlh
+
+##############################################
+# CMake (if using CMake with Visual Studio)
+##############################################
 CMakeCache.txt
 CMakeFiles/
 CMakeScripts/
@@ -98,12 +140,40 @@ compile_commands.json
 CTestTestfile.cmake
 *.cmake
 
-# Others
-*.ipdb
-*.iobj
-
-# Crash dumps
+##############################################
+# Logs / Crash Dumps
+##############################################
 *.dmp
+*.log
 
-# Visual Studio Code (if you also use VS Code)
+##############################################
+# IDE and Editor Specific
+##############################################
 .vscode/
+.vs/
+*.VC.VC.opendb
+*.VC.db
+
+##############################################
+# Miscellaneous
+##############################################
+*.db
+*.aps
+*.ncb
+*.opt
+*.plg
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.zip
+*.rar
+*.sfx
+*.iso
+*.exe
+
+##############################################
+# Optional: Ignore CMake build directory (if you use out-of-source builds)
+##############################################
+build/
