@@ -30,11 +30,11 @@ namespace Menu
 		void set_symbol(std::string symbol) { if (symbol.length() == 1) this->symbol = symbol; }
 
 		// Method - Display
-		void display()
+		void display(bool line_break = false)
 		{
 			UI::Text(
 				symbol, new UI::Color(*color), new UI::Style(*style)
-			).display();
+			).display(line_break);
 		}
 
 		// Destructor
@@ -61,10 +61,14 @@ namespace Menu
 		OptionsList(const OptionsList &other)	// Copy
 			: color(new UI::Color(*other.color)), style(new UI::Style(*other.style)), options(options) { }
 
-		// Getter
+		// Getters
 		UI::Text get_option(const unsigned int& index) const
 		{
 			return options.at(index);
+		}
+		int get_size() const
+		{
+			return options.size();
 		}
 
 		// Method - Add an option
@@ -78,8 +82,12 @@ namespace Menu
 		// Method - Print all options - Debugging purpose
 		void display_all()
 		{
-			for (auto &option : options)
+			int num = 1;
+			for (auto& option : options)
+			{
+				UI::Text(std::to_string(num++) + ". ", new UI::Color(*color), new UI::Style(*style)).display();
 				option.display(true);
+			}
 		}
 
 		// Destructor

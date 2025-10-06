@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.h" />
+    <ClInclude Include="functions.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="misc.h" />

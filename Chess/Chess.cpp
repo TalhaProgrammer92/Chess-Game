@@ -12,6 +12,7 @@
 #include "../Chess/symbols.h"
 
 #include "../Chess/misc.h"
+#include "../Chess/menu.h"
 
 using namespace std;
 
@@ -63,11 +64,40 @@ int main()
 	);
 	decor.display();*/
 
-	Menu::OptionsList options(
+	/*Menu::OptionsList options(
 		new UI::Color(UI::ForegroundColor::BrightYellow, UI::BackgroundColor::None),
 		new UI::Style(UI::TextStyle::Bold)
 	);
 	for (int i = 0; i < 5; i++)
 		options.add_option("Option " + to_string(i + 1));
-	options.display_all();
+	options.display_all();*/
+
+	//Menu::MenuBase menu(
+	//	// Header
+	//	new UI::Text(
+	//		"Main Menu",
+	//		new UI::Color(UI::ForegroundColor::BrightCyan, UI::BackgroundColor::None),
+	//		new UI::Style(UI::TextStyle::Bold)
+	//	),
+	//	// Header Decorator
+	//	new Menu::Decorator(
+	//		"*", new UI::Color(UI::ForegroundColor::BrightMagenta, UI::BackgroundColor::None),
+	//		new UI::Style(UI::TextStyle::Bold)
+	//	),
+	//	// Options Property
+	//	new Menu::OptionsList(
+	//		new UI::Color(UI::ForegroundColor::BrightGreen, UI::BackgroundColor::None),
+	//		new UI::Style(UI::TextStyle::Bold)
+	//	)
+	//);
+	//menu.add_option("Start Game");
+	//menu.add_option("Load Game");
+	//menu.add_option("Settings");
+	//menu.add_option("Help");
+	//menu.add_option("Exit");
+	//menu.display();
+
+	Menu::MainMenu main_menu;
+	main_menu.display_menu();
+	cout << "Option Selected: " << main_menu.option_selection() << endl;
 }
