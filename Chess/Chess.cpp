@@ -99,5 +99,5 @@ int main()
 
 	Menu::MainMenu main_menu;
 	main_menu.display_menu();
-	cout << "Option Selected: " << main_menu.option_selection() << endl;
+	cout << "Option Selected: " << main_menu.track_option_selection() << endl;
 }

@@ -128,11 +128,13 @@
   <ItemGroup>
     <ClInclude Include="cell.h" />
     <ClInclude Include="color.h" />
+    <ClInclude Include="datatable.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="misc.h" />
     <ClInclude Include="name.h" />
+    <ClInclude Include="piece.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="position.h" />
     <ClInclude Include="score.h" />

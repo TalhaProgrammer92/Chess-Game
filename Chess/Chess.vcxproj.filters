@@ -28,6 +28,12 @@
     <Filter Include="Header Files\Board">
       <UniqueIdentifier>{2954f553-f9a1-4454-80cf-ad55042733f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Piece">
+      <UniqueIdentifier>{c3c2d254-6cdc-432b-8e22-b81bbe6fb0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{7bb2e391-b386-4743-b584-0b5e0f7d8f04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chess.cpp">
@@ -76,6 +82,12 @@
     </ClInclude>
     <ClInclude Include="cell.h">
       <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="piece.h">
+      <Filter>Header Files\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="datatable.h">
+      <Filter>Header Files\Data</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -113,7 +113,7 @@ namespace Menu
 		}
 
 		// Method - Make an option selection
-		int option_selection() const
+		int track_option_selection() const
 		{
 			int choice = 0;
 
@@ -173,9 +173,9 @@ namespace Menu
 		}
 
 		// Method - Make an option selection
-		int option_selection() const
+		int track_option_selection() const
 		{
-			return MenuBase::option_selection();
+			return MenuBase::track_option_selection();
 		}
 	};
 }
