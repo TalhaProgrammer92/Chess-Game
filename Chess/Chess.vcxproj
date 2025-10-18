@@ -129,7 +129,9 @@
     <ClInclude Include="cell.h" />
     <ClInclude Include="color.h" />
     <ClInclude Include="datatable.h" />
+    <ClInclude Include="enums.h" />
     <ClInclude Include="functions.h" />
+    <ClInclude Include="handler.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="misc.h" />

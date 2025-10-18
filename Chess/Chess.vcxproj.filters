@@ -89,5 +89,11 @@
     <ClInclude Include="datatable.h">
       <Filter>Header Files\Data</Filter>
     </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>Header Files\Piece</Filter>
+    </ClInclude>
+    <ClInclude Include="handler.h">
+      <Filter>Header Files\Piece</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
